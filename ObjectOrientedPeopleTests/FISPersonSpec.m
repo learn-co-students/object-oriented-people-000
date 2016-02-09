@@ -90,6 +90,12 @@ describe(@"FISPerson", ^{
             NSString *happy10000thBirthdayTim = @"HAPPY 10000TH BIRTHDAY, TIM!!!";
             expect([tim celebrateBirthday]).to.equal(happy10000thBirthdayTim);
         });
+        
+        // asking me to incllude ordinal ending logic but not testing it at all? honestly ;)
+        it(@"should return a string containing a happy birthday message for Jim", ^{
+            NSString *happy10000thBirthdayJim = @"HAPPY 31ST BIRTHDAY, JIM!!!";
+            expect([jim celebrateBirthday]).to.equal(happy10000thBirthdayJim);
+        });
     });
     
     describe(@"learnSkillBash", ^{
